@@ -4,7 +4,7 @@ import json
 
 def channel_by_region(region_code):
   channel_url = "https://iptv-org.github.io/iptv/channels.json"
-  regions_url = "https://raw.githubusercontent.com/iptv-org/iptv/master/scripts/data/regions.json"
+  regions_url = "https://raw.githubusercontent.com/sktkddn777/iptv/main/regions.json"
   channel_data = requests.get(channel_url).json()
   regions_data = requests.get(regions_url).json()
 
@@ -30,7 +30,7 @@ def channel_by_region(region_code):
 
 def channel_by_categories(category):
   channel_url = "https://iptv-org.github.io/iptv/channels.json"
-  categories_url = "https://raw.githubusercontent.com/iptv-org/iptv/master/scripts/data/categories.json"
+  categories_url = "https://raw.githubusercontent.com/sktkddn777/iptv/main/categories.json"
   channel_data = requests.get(channel_url).json()
   categories_data = requests.get(categories_url).json()
 
